@@ -7,7 +7,7 @@ import MyDrawer from "./drawer";
 
 const Headers = () => {
     return (
-      <div  className="min-w-full min-h-[10vh] shadow-xl flex items-center px-[8vw] justify-between overflow-clip">
+      <div  className="min-w-full min-h-[10vh] shadow-xl flex items-center min-md:px-[8vw] justify-between overflow-clip">
         <div className="flex gap-5 text-xl transition-all max-md:hidden">
           <NavLink className={({ isActive }) => (isActive ? ' text-orange-400 transition-all' : 'text-black transition-all')} to="/">Home</NavLink>
           <NavLink className={({ isActive }) => (isActive ? 'text-orange-400 transition-all' : 'text-black transition-all')} to="/about">About</NavLink>
