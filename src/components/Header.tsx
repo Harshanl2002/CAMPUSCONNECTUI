@@ -7,14 +7,14 @@ import MyDrawer from "./drawer";
 
 const Headers = () => {
     return (
-      <div  className="min-w-full min-h-[10vh] shadow-xl flex items-center min-md:px-[8vw] justify-between overflow-clip">
+      <div  className="min-w-full min-h-[10vh] shadow-xl flex items-center justify-between overflow-clip md:px-[8vw] px-3">
         <div className="flex gap-5 text-xl transition-all max-md:hidden">
           <NavLink className={({ isActive }) => (isActive ? ' text-orange-400 transition-all' : 'text-black transition-all')} to="/">Home</NavLink>
           <NavLink className={({ isActive }) => (isActive ? 'text-orange-400 transition-all' : 'text-black transition-all')} to="/about">About</NavLink>
           <NavLink className={({ isActive }) => (isActive ? 'text-orange-400 transition-all' : 'text-black transition-all')} to="/contact">Contact</NavLink>
           <NavLink className={({ isActive }) => (isActive ? 'text-orange-400 transition-all' : 'text-black transition-all')} to="/pricing">Pricing</NavLink>
         </div>
-        <Link to={"/"} className="flex items-center min-w-fit ">
+        <Link to={"/"} className="flex items-center min-w-fit max-md:justify-items-center">
           <img src={logo} width={"50px"}/>
           <h2 className="mx-1 text-2xl anton text-[#ff8640] ">{"Campus".toLocaleUpperCase()}<span className="text-[#1e1e1e] mx-[2px]">{"Connect".toLocaleUpperCase()}</span></h2>
         </Link>
